@@ -11,10 +11,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-       //создание экземпляра класса BankAccount
-       BankAccount account1 = new BankAccount();
+        //создание экземпляра класса BankAccount
+        BankAccount account1 = new BankAccount();
 
-       //установим номер аккаунта через сеттер
+        //установим номер аккаунта через сеттер
         account1.setAccountNumber("1");
         //Установим баланс через сеттер баланса
         account1.setBalance(1000);
@@ -22,23 +22,14 @@ public class Main {
         //Получим имя и баланс акканта через метод в классе BankAccount
         account1.print();
 
-        //пополнение баланса
+        //пополнение баланса с выводом баланса после пополнения
         account1.refullment(500);
-//        //баланс после пополнения
-//        account1.print();
 
-        //снятие денег
+        //снятие денег с выводом баланса после снятия
         account1.recieve(300);
-//        //баланс после снятия
-//        account1.print();
-
-
 
 
     }
-
-
-
 
 
 }

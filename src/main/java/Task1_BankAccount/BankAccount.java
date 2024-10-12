@@ -15,16 +15,18 @@ public class BankAccount implements Printable {
         return this.balance;
     }
 
+    //установка номера аккаунта
     public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
+    //получение номера аккаунта
     public String getAccountNumber() {
         return this.accountNumber;
     }
 
-    //имплементация метода из интерфейса Printable
-    @Override
+    //реализация метода из интерфейса Printable
+    @Override // аннотация для переопределения метода
     public void print() {
         //Выведем имя и баланс аккаунта
         System.out.println();
